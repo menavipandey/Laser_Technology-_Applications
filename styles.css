@@ -167,7 +167,7 @@ a:hover {
   padding: 4rem 10%;
   background-color: #222;
   color: white;
-  background-image: url(./images/laser.png);
+  background-image: url(./laser.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -450,7 +450,7 @@ div {
 
 /* Footer styles */
 footer {
-  background-image: url(./images/laser.png);
+  background-image: url(./laser.png);
   color: white;
   text-align: center;
   padding: 1rem;
