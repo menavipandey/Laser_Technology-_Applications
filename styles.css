@@ -1,0 +1,457 @@
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and text color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body {
+  background: linen;
+  margin: 0;
+}
+
+/* navbar main style */
+.navbar {
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 9px 6px 3px rgba(0, 0, 0, 0.2);
+  /* use a "z-index" if you're using something that can cover the menu */
+}
+
+/* you can also have your logo image here */
+
+.navbar .brand h1 {
+  /* height: 70px; */
+  margin-left: 40px;
+  color: rgb(241, 241, 241);
+}
+
+nav ul {
+  all: initial; /* clears all the previous and default style of ul */
+}
+
+.navbar {
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 100%; */
+  background-color: rgb(31, 31, 31);
+  /* padding-bottom: 70px; */
+}
+.navbar .menu {
+  display: flex;
+  /* height: 100%; */
+  line-height: 100px;
+
+  /* padding-bottom: 20px; */
+  /* padding-top:10px; */
+}
+.navbar .menu li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* height: 100%; */
+
+  /* here start menu links decoration */
+  font-family: "Nunito", sans-serif;
+}
+.navbar .menu li a {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  /* height: 100%; */
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.active a {
+  color: rgb(255, 234, 166);
+}
+nav a:hover {
+  background-color: rgb(182, 225, 255);
+  color: rgb(0, 70, 70);
+}
+a:hover {
+  color: rgb(255, 234, 166);
+}
+
+/* hides open and close button */
+.navbar .navOpen,
+.navbar .navClose {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  /* setting the responsive menu style */
+
+  .navbar .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    min-width: 250px;
+    top: 0;
+    right: -100%; /* choose right or left to set menu side displayed / keep -100% to hide it */
+    line-height: normal;
+    padding: 20px;
+    transition: all 0.5s ease; /* to make the transition close-to-open soft */
+  }
+
+  nav .brand img {
+    height: 70px;
+    margin-left: 20px;
+  }
+
+  .navbar .menu li a {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .navbar .menu li {
+    display: block;
+    height: auto;
+    line-height: 45px;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .navbar .menu li:hover {
+    background-color: rgb(182, 225, 255);
+  }
+  .navbar .menu .navOpen {
+    margin-right: 5%;
+  }
+  .navbar .navOpen,
+  .navbar .navClose {
+    /* color: white; */
+    font-size: x-large;
+    display: block;
+  }
+  .navbar .navClose {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .navbar .brand h1 {
+    margin-left: 0px;
+  }
+}
+
+/* Description section styles */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10%;
+  background-color: #222;
+  color: white;
+  background-image: url(./images/laser.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  text-decoration:double;
+  text-shadow: #513a1c;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 60%;
+  max-height: 300px;
+  animation: float 4s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #e58300;
+  transform: scale(1.05);
+}
+#carsol {
+  margin-top: 300px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  margin-left: 30%;
+}
+
+/* Description section styles */
+.description {
+  padding: 4rem 10%;
+  background-color: rgb(234, 234, 234);
+}
+
+.description-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.description-images {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
+.history h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.image-box {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.image-box img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.image-box p {
+  margin-top: 1rem;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+/* images frames */
+
+.Scientists {
+  height: 300px;
+}
+.card {
+  margin: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card-body {
+  text-align: center;
+}
+.card img {
+  height: 300px;
+  border-radius: 12px 12px 0 0;
+}
+.card:hover {
+  color: grey;
+}
+
+.left-side {
+  float: left;
+  width: 200px;
+  padding: 1%;
+  height: 200px;
+  border: 12px solid black;
+  margin: 16px;
+}
+.right-side {
+  float: right;
+  width: 200px;
+  padding: 1%;
+  height: 200px;
+  border: 12px solid black;
+  margin: 16px;
+}
+
+.about {
+  margin-top: 700px;
+}
+
+.container1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 600px;
+  padding: 50px;
+  background-color: #f5f5f5;
+  box-shadow: 0 30px 50px #dbdbdb;
+  margin-top: 1500px;
+}
+#slide {
+  width: max-content;
+  margin-top: 50px;
+}
+.item {
+  width: 200px;
+  height: 300px;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: 0.5s;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #505050;
+}
+.item:nth-child(1),
+.item:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+}
+.item:nth-child(3) {
+  left: 50%;
+}
+.item:nth-child(4) {
+  left: calc(50% + 220px);
+}
+.item:nth-child(5) {
+  left: calc(50% + 440px);
+}
+.item:nth-child(n + 6) {
+  left: calc(50% + 660px);
+  opacity: 0;
+}
+.item .content {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  width: 300px;
+  text-align: left;
+  padding: 0;
+  color: #eee;
+  transform: translate(0, -50%);
+  display: none;
+  font-family: system-ui;
+}
+.item:nth-child(2) .content {
+  display: block;
+  z-index: 11111;
+}
+.item .name {
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 1 forwards;
+}
+.item .des {
+  margin: 20px 0;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+}
+.item button {
+  padding: 10px 20px;
+  border: none;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+
+div {
+  overflow-x: hidden;
+}
+@keyframes showcontent {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+}
+.buttons {
+  position: absolute;
+  bottom: 30px;
+  z-index: 222222;
+  text-align: center;
+  width: 100%;
+}
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #555;
+  transition: 0.5s;
+}
+.buttons button:hover {
+  background-color: #bac383;
+}
+
+/* Footer styles */
+footer {
+  background-image: url(./images/laser.png);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
